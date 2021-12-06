@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 10px 15px;
+}
+
+.menuItems {
+  display: flex;
+  align-items: center;
+}
+
+.menuItems > button {
+  margin-right: 5px;
+  padding: 0 20px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.menuItemsMobile {
+  display: none;
+}
+
+.menuItemsMobile > button {
+  margin-right: 5px;
+  padding: 0 20px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.searchButton {
+  display: block;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.menuButton {
+  display: none;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.img {
+  width: 100%;
+}
+
+.imgSection {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.imgSectionMobile {
+  display: none;
+}
+
+.imgText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 6px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .menuItems {
+    display: none;
+  }
+
+  .menuItemsMobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .searchButton {
+    display: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .menuButton {
+    display: block;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .imgSection {
+    display: none;
+  }
+
+  .imgSectionMobile {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+}

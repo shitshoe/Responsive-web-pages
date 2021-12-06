@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div#container{
+    width: 100%;
+    height: auto;
+    /* background-color: blue; */
+    /* border: 2px solid black; */
+   
+}
+.header{
+    width: inherit;
+    height: 80px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px;
+
+}
+.hamburger{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .7s;
+    border-radius: 12%;
+}
+.hamburger:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0,0,0.5 );
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+.sectionOne{
+    width:inherit;
+    height:auto;
+    /* background-color: lawngreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* max-width: 800px; */
+    margin: 0 auto;
+}
+.food{
+    width: 280px;
+    height: 400px;
+    
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding:0 10px;
+    margin: 10px;
+    transition: all .7s;
+    
+}
+.food:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0,0,0.5 );
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+.food img{
+    width: inherit;
+    height:300px;
+
+}
+.pages{
+    width: inherit;
+    height:80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:10px;
+}
+.pages button{
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    border: none;
+    transition: all .7s;
+}
+
+.pages button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0,0,0.5 );
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+.arrow:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0,0,0.5 );
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+.arrow{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .7s;
+}
+.about{
+    width: inherit;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:30px;
+
+}
+
+/* .about h1 p{
+    padding: 10px 0px;
+} */
+.about img{
+    width: 450px;
+    height: auto;
+    padding: 10px 0;
+}
+
+.footer{
+    width: inherit;
+    height: auto;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    text-align: center;
+    padding:30px;
+    margin: 0 auto;
+}
+.footerOne{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding:30px 10px;
+    margin: 0 auto;
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    /* pad30px 10pxding:; */
+    /* margin: 0 auto; */
+}
+.blogPic:hover{
+    background-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0,0,0.5 );
+    cursor: pointer;
+    color: white;
+
+}
+.blogPic{
+    width: 650;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding:30px  10px;
+    margin: 0 auto;
+}
+.blogPic img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+.popularTag{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    /* margin: 20px; */
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.popularBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    padding: 10px;
+    /* max-width: px; */
+flex-wrap: wrap;
+}
+.popularBtn button{
+    width: 70px;
+    height: 25px;
+    margin: 10px;
+    background-color: grey;
+    color: white;
+    border: none;
+    
+}
+.popularBtn button:hover{
+    color: white;
+    background-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0,0,0.5 );
+    cursor: pointer;
+}
+
+
+@media  screen and (min-width: 700px) {
+    .sectionOne{
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: px;
+    }
+        
+    .food{
+        width: 23%;
+    }
+    .food img{
+        width: 337px;
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footerOne{
+        width: 30%;
+    }
+    .blog{
+        width: 30%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    }
+    .popularTag{
+        width: 337px;
+    }
+    
+    
+}
+/* .about img{
+    width: auto;
+    height: auto;
+    padding: 10px 0;
+} */
